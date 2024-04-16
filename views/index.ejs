@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POC Result Upload</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>My Result Upload Portal</h1>
+    </header>
+    <main>
+   <div class="left">
+    <h2>Click  on the button below to upload your result</h2>
+    <form class="upload-form" id="upload-form" enctype="multipart/form-data">
+      <div class="upload-container">
+        <label for="result" class="custom-file-upload">
+          Choose File
+          <input type="file" id="result" name="result" class="fileInput">
+        </label>
+        <p id="selectedFileName" class="selected-file-name">No file chosen</p>
+      </div>
+      
+    <button class="submit" type="submit">Submit</button>
+    </form>
+        
+    </div>
+   </div>
+    <div class="right">
+      <p class="no-result">No results seen yet</p>
+    </div>
+    
+    </main>
+    <script src="./button.js"></script>
+    <script src="./form.js"></script>
+  </body>
+</html>
